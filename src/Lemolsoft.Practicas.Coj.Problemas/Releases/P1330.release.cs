@@ -1,0 +1,2 @@
+﻿using System;
+public class P1330Release{static readonly string[]A=new string[]{"ABSINTH","BEER","BRANDY","CHAMPAGNE","GIN","RUM","SAKE","TEQUILA","VODKA","WHISKEY","WINE"};static bool Contains(string v){foreach(string s in A)if(s==v)return true;return false;}static void Main(){int t=int.Parse(Console.ReadLine());for(;t>0;t--){int n=int.Parse(Console.ReadLine()),r=0,i;string s;for(;n>0;n--)if((int.TryParse(s=Console.ReadLine(),out i)&&(i<18))||Contains(s))r++;Console.WriteLine(r);}}}

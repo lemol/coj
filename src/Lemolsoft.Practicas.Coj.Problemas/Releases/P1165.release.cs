@@ -1,0 +1,1 @@
+﻿using System;class P{static void Maain(){string l;while((l=Console.ReadLine())!="*")Console.WriteLine(A(l));}static int A(string s){int r=1;for(int i=1;i<=s.Length;i++){if(s[i-1]=='Y')r=i*r/M(i,r);else if(M(i,r)==i)return-1;}for(int i=1;i<=s.Length;i++)if(s[i-1]!='Y'&&M(i,r)==i)return-1;return r;}static int M(int x,int y){while(y!=0){int a=y;y=x%y;x=a;}return x;}}

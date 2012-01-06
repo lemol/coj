@@ -1,0 +1,3 @@
+﻿using System;
+using System.Collections.Generic;
+class P1136Release{static readonly List<uint>p=new List<uint>();static bool I(uint x){if(x<=1||(x%2==0&&x!=2)||(x%3==0&&x!=3)||(x%5==0&&x!=5)||(x%7==0&&x!=7)||(x%11==0&&x!=11)||(x%13==0&&x!=13)||(x%17==0&&x!=17)||(x%19==0&&x!=19)||(x%23==0&&x!=23)||(x%29==0&&x!=29)||(x%31==0&&x!=31))return false;uint d=37;while(d<=Math.Ceiling(Math.Sqrt(x))){if(x%d==0)return false;d++;}return true;}static void Maain(){int c=int.Parse(Console.ReadLine());for(int i=0;i<c;i++){string[]s=Console.ReadLine().Split(' ');uint x=uint.Parse(s[0]),y=uint.Parse(s[1]);for (uint j = x; j <= y; j++){if(p.Contains(j)){Console.WriteLine(j);continue;}if(I(j)){Console.WriteLine(j);p.Add(j);}}if(i!=c-1)Console.WriteLine();}}}

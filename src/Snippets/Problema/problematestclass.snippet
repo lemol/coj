@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Classe Teste de Problema</Title>
+      <Shortcut>testprob</Shortcut>
+      <Description>Code snippet para classe teste de problemas</Description>
+      <Author>Lemol-C Software</Author>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>Lemolsoft.Practicas.Coj.Problemas</Namespace>
+        </Import>
+		<Import>
+          <Namespace>Lemolsoft.Practicas.Coj.CojTests.NUnit</Namespace>
+        </Import>
+		<Import>
+          <Namespace>NUnit.Framework</Namespace>
+        </Import>
+      </Imports>
+      <References>
+        <Reference>
+          <Assembly>Lemolsoft.Practicas.Coj.dll</Assembly>
+        </Reference>
+		<Reference>
+          <Assembly>Lemolsoft.Practicas.Coj.CojTests.NUnit.dll</Assembly>
+        </Reference>
+		<Reference>
+          <Assembly>NUnit.Framework.dll</Assembly>
+        </Reference>
+      </References>
+      <Declarations>
+        <Literal>
+          <ID>nome</ID>
+          <ToolTip>Substitua com o nome do problema</ToolTip>
+          <Default>FooProblema</Default>
+        </Literal>
+		<Literal Editable="false">
+            <ID>TestFixture</ID>
+            <Function>SimpleTypeName(global::NUnit.Framework.TestFixture)</Function>
+          </Literal>
+          <Literal Editable="false">
+            <ID>Test</ID>
+            <Function>SimpleTypeName(global::NUnit.Framework.Test)</Function>
+          </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[[$TestFixture$]
+	  public class $nome$Test : ProblemaTest<$nome$>
+	  {
+	  
+		#region Testes Propostos
+		
+		[$Test$]
+		public void Teste_Proposto()
+		{
+			
+			NovaEntrada(@"$end$");
+			
+			Problema.Executar();
+			
+			ExceptSaida(@"");
+			
+		}
+		
+		#endregion
+		
+	  }]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

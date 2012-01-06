@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{23E44A2A-795F-444E-9908-7EFE9AFE0269}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lemolsoft.Practicas.Coj.Problemas</RootNamespace>
+    <AssemblyName>Lemolsoft.Practicas.Coj.Problemas</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="P1002.cs" />
+    <Compile Include="P1014.cs" />
+    <Compile Include="P1149.cs" />
+    <Compile Include="P1152.cs" />
+    <Compile Include="P1173.cs" />
+    <Compile Include="P1136.cs" />
+    <Compile Include="P1108.cs" />
+    <Compile Include="P1103.cs" />
+    <Compile Include="P1143.cs" />
+    <Compile Include="P1006.cs" />
+    <Compile Include="P1127.cs" />
+    <Compile Include="P1165.cs" />
+    <Compile Include="P1195.cs" />
+    <Compile Include="P1200.cs" />
+    <Compile Include="P1302.cs" />
+    <Compile Include="P1330.cs" />
+    <Compile Include="P1394.cs" />
+    <Compile Include="P1473.cs" />
+    <Compile Include="P1498.cs" />
+    <Compile Include="P1510.cs" />
+    <Compile Include="P1562.cs" />
+    <Compile Include="Releases\P1006.release.cs" />
+    <Compile Include="Releases\P1014.release.cs" />
+    <Compile Include="Releases\P1108.release.cs" />
+    <Compile Include="Releases\P1136.release.cs" />
+    <Compile Include="Releases\P1152.release.cs" />
+    <Compile Include="Releases\P1165.release.cs" />
+    <Compile Include="Releases\P1173.release.cs" />
+    <Compile Include="Releases\P1302.release.cs" />
+    <Compile Include="P1313.cs" />
+    <Compile Include="Releases\P1313.release.cs" />
+    <Compile Include="P1465.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Releases\P1330.release.cs" />
+    <Compile Include="Releases\P1394.release.cs" />
+    <Compile Include="Releases\P1465.release.cs" />
+    <Compile Include="Releases\P1473.release.cs" />
+    <Compile Include="Releases\P1498.release.cs" />
+    <Compile Include="Releases\P1510.release.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\coj\Lemolsoft.Practicas.Coj.csproj">
+      <Project>{A888AD22-E6E9-47AC-B290-5D3BBB0F3BF2}</Project>
+      <Name>Lemolsoft.Practicas.Coj</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

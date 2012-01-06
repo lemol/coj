@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B56CDC32-3EDA-461C-A034-B8CDB3963FF2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lemolsoft.Practicas.Coj.Problemas.Tests</RootNamespace>
+    <AssemblyName>Lemolsoft.Practicas.Coj.Problemas.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentValidation">
+      <HintPath>..\..\..\..\..\..\..\pnp\code\csharp\dotnetarchitects-simple-example-dna-c202f72\dotnetarchitects-simple-example-dna-c202f72\lib\FluentValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="Moq">
+      <HintPath>..\..\..\..\..\..\..\pnp\labs\csharp\3c\3c.Tests\bin\Debug\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.5.9.10348, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="P1002.Test.cs" />
+    <Compile Include="P1014.Test.cs" />
+    <Compile Include="P1152Test.cs" />
+    <Compile Include="P1149Test.cs" />
+    <Compile Include="P1173Test.cs" />
+    <Compile Include="P1136Test.cs" />
+    <Compile Include="P1108Test.cs" />
+    <Compile Include="P1103Test.cs" />
+    <Compile Include="P1165Test.cs" />
+    <Compile Include="P1143Test.cs" />
+    <Compile Include="P1006Test.cs" />
+    <Compile Include="P1127Test.cs" />
+    <Compile Include="P1195.Test.cs" />
+    <Compile Include="P1200.Test.cs" />
+    <Compile Include="P1302Test.cs" />
+    <Compile Include="P1313Test.cs" />
+    <Compile Include="P1330.Test.cs" />
+    <Compile Include="P1394Test.cs" />
+    <Compile Include="P1465Test.cs" />
+    <Compile Include="P1473Test.cs" />
+    <Compile Include="P1498Test.cs" />
+    <Compile Include="P1510Test.cs" />
+    <Compile Include="P1562.Test.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\coj\Lemolsoft.Practicas.Coj.csproj">
+      <Project>{A888AD22-E6E9-47AC-B290-5D3BBB0F3BF2}</Project>
+      <Name>Lemolsoft.Practicas.Coj</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lemolsoft.Practicas.Coj.CojTests\Lemolsoft.Practicas.Coj.CojTests.NUnit.csproj">
+      <Project>{CD9CD0B7-149D-44B5-AE20-75BCB6415E87}</Project>
+      <Name>Lemolsoft.Practicas.Coj.CojTests.NUnit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lemolsoft.Practicas.Coj.Problemas\Lemolsoft.Practicas.Coj.Problemas.csproj">
+      <Project>{23E44A2A-795F-444E-9908-7EFE9AFE0269}</Project>
+      <Name>Lemolsoft.Practicas.Coj.Problemas</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

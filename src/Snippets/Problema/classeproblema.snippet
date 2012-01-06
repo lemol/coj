@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Problema</Title>
+      <Shortcut>probclass</Shortcut>
+      <Description>Code snippet para classe de problemas</Description>
+      <Author>Lemol-C Software</Author>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>Lemolsoft.Practicas.Coj</Namespace>
+        </Import>
+		<Import>
+          <Namespace>System.IO</Namespace>
+        </Import>
+      </Imports>
+      <References>
+        <Reference>
+          <Assembly>Lemolsoft.Practicas.Coj.dll</Assembly>
+        </Reference>
+      </References>
+      <Declarations>
+        <Literal>
+          <ID>nome</ID>
+          <ToolTip>Substitua com o nome do problema</ToolTip>
+          <Default>NovoProblema</Default>
+        </Literal>
+          <Literal Editable="false">
+            <ID>ProblemaBase</ID>
+            <Function>SimpleTypeName(global::Lemolsoft.Practicas.Coj.Problema)</Function>
+          </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[
+	  public class $nome$ : $ProblemaBase$
+	  {
+		#region Executivos
+		
+		public override void Executar()
+		{
+			$end$
+		}
+		
+		#endregion
+		
+        #region Constructores
+        public $nome$() : base() {}
+        public $nome$(TextWriter writer, TextReader reader) : base(writer, reader) { }
+        #endregion
+		
+	  
+	  }]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
